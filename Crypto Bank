@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TenTaw BossMafia</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #050505;
+      color: #e6e6e6;
+    }
+    header {
+      background: #111;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 1px solid #222;
+    }
+    .logo {
+      font-size: 32px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+    .tagline {
+      font-size: 14px;
+      color: #888;
+      margin-top: 5px;
+    }
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: 20px auto;
+    }
+    .section {
+      padding: 40px 0;
+      border-bottom: 1px solid #222;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #f2b632;
+    }
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .card {
+      background: #111;
+      border: 1px solid #222;
+      padding: 20px;
+      margin: 10px;
+      width: 300px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    }
+    .card h3 {
+      margin-top: 0;
+      color: #f2b632;
+    }
+    .card p {
+      color: #ccc;
+    }
+    .btn {
+      display: inline-block;
+      background: #f2b632;
+      color: #111;
+      padding: 10px 20px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    .slider {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .quote {
+      font-size: 20px;
+      font-style: italic;
+      color: #ccc;
+    }
+    .crypto-tips {
+      list-style: none;
+      padding: 0;
+    }
+    .crypto-tips li {
+      padding: 10px;
+      border-bottom: 1px solid #222;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #111;
+      border-top: 1px solid #222;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">TenTaw BossMafia</div>
+  <div class="tagline">Crypto Hustler • Motivation • Mafia Mindset</div>
+</header>
+
+<div class="container">
+  <!-- About Section -->
+  <section class="section" id="about">
+    <h2>About Me</h2>
+    <div class="row">
+      <div class="card">
+        <h3>My Story</h3>
+        <p>I was raised in an orphanage, lived street life, and learned from mistakes. Now I'm building wealth through crypto and mindset.</p>
+      </div>
+      <div class="card">
+        <h3>My Mission</h3>
+        <p>To inspire and motivate others with a mafia mindset—discipline, focus, and hustle.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section class="section" id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="row">
+      <div class="card">
+        <h3>Project 1</h3>
+        <p>Crypto trading strategies & market analysis.</p>
+        <a class="btn" href="#">View</a>
+      </div>
+      <div class="card">
+        <h3>Project 2</h3>
+        <p>Motivational content & mindset coaching.</p>
+        <a class="btn" href="#">View</a>
+      </div>
+      <div class="card">
+        <h3>Project 3</h3>
+        <p>Personal branding & business development.</p>
+        <a class="btn" href="#">View</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quotes Slider -->
+  <section class="section" id="quotes">
+    <h2>Quotes</h2>
+    <div class="slider">
+      <div class="quote" id="quoteText">"Success is earned, not given."</div>
+      <br>
+      <a class="btn" href="#" onclick="nextQuote()">Next Quote</a>
+    </div>
+  </section>
+
+  <!-- Crypto Tips -->
+  <section class="section" id="crypto">
+    <h2>Crypto Tips</h2>
+    <ul class="crypto-tips">
+      <li>Tip 1: Never invest what you can't afford to lose.</li>
+      <li>Tip 2: Learn technical analysis and market trends.</li>
+      <li>Tip 3: Always use stop-loss to protect your funds.</li>
+      <li>Tip 4: Diversify your portfolio.</li>
+      <li>Tip 5: Stay updated with news and market sentiment.</li>
+    </ul>
+  </section>
+
+  <!-- Contact -->
+  <section class="section" id="contact">
+    <h2>Contact Me</h2>
+    <div class="row">
+      <div class="card">
+        <h3>Email</h3>
+        <p>dalimillionaire@gmail.com</p>
+      </div>
+      <div class="card">
+        <h3>Phone</h3>
+        <p>+264816465788</p>
+      </div>
+      <div class="card">
+        <h3>Instagram</h3>
+        <p>@TenTaw_BossMafia</p>
+      </div>
+    </div>
+  </section>
+</div>
+
+<footer>
+  © 2026 TenTaw BossMafia • All rights reserved.
+</footer>
+
+<script>
+  const quotes = [
+    "Success is earned, not given.",
+    "A real boss never quits, he evolves.",
+    "Crypto is a battlefield. Stay sharp.",
+    "Discipline is the key to every victory.",
+    "Hustle in silence, let your success speak."
+  ];
+
+  let currentIndex = 0;
+
+  function nextQuote() {
+    currentIndex++;
+    if (currentIndex >= quotes.length) currentIndex = 0;
+    document.getElementById("quoteText").innerText = quotes[currentIndex];
+  }
+</script>
+
+</body>
+</html>
